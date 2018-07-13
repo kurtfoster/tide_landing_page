@@ -8,11 +8,11 @@
         "dpc-sdp/tide_media": "@dev",
         "drupal/paragraphs": "^1.2",
         "drupal/maxlength": "^1.0@beta",
-        "drupal/smart_trim": "^1.1"
+        "drupal/smart_trim": "^1.1",
+        "dpc-sdp/tide_webform": "Allows to use questionnaires"
     },
     "suggest": {
-        "dpc-sdp/tide_api": "Allows to use Drupal in headless mode",
-        "dpc-sdp/tide_webform": "Allows to use questionnaires"
+        "dpc-sdp/tide_api": "Allows to use Drupal in headless mode"
     },
     "repositories": {
         "drupal": {

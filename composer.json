@@ -9,7 +9,7 @@
         "drupal/paragraphs": "^1.2",
         "drupal/maxlength": "^1.0@beta",
         "drupal/smart_trim": "^1.1",
-        "dpc-sdp/tide_webform": "Allows to use questionnaires"
+        "dpc-sdp/tide_webform": "@dev"
     },
     "suggest": {
         "dpc-sdp/tide_api": "@dev",

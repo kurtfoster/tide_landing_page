@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_summary
     - field.field.node.landing_page.field_metatags
     - field.field.node.landing_page.field_related_links
+    - field.field.node.landing_page.field_show_content_rating
     - field.field.node.landing_page.field_show_related_content
     - field.field.node.landing_page.field_show_social_sharing
     - field.field.node.landing_page.field_show_whats_next
@@ -64,6 +65,7 @@ hidden:
   field_landing_page_show_contact: true
   field_metatags: true
   field_related_links: true
+  field_show_content_rating: true
   field_show_related_content: true
   field_show_social_sharing: true
   field_show_whats_next: true

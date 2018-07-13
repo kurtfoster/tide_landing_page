@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_summary
     - field.field.node.landing_page.field_metatags
     - field.field.node.landing_page.field_related_links
+    - field.field.node.landing_page.field_show_content_rating
     - field.field.node.landing_page.field_show_related_content
     - field.field.node.landing_page.field_show_site_section_nav
     - field.field.node.landing_page.field_show_social_sharing
@@ -355,6 +356,14 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
+  field_show_content_rating:
+    type: boolean_checkbox
+    region: content
+    field_name: field_show_content_rating
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_show_related_content:
     weight: 37
     settings:

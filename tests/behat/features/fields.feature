@@ -3,7 +3,7 @@ Feature: Fields for Landing Page content type
 
   Ensure that Landing Page content has the expected fields.
 
-  @api
+  @api @nosuggest
   Scenario: The content type has the expected fields (and labels where we can use them).
     Given I am logged in as a user with the "create landing_page content" permission
     When I visit "node/add/landing_page"
@@ -105,3 +105,11 @@ Feature: Fields for Landing Page content type
     When I visit "node/add/landing_page"
     And I should see the text "Menu settings"
     And I see field "Provide a menu link"
+
+  @api @suggest
+  Scenario: The content type has the expected fields (and labels where we can use them) including from suggested modules.
+    Given I am logged in as a user with the "create landing_page content" permission
+    When I visit "node/add/landing_page"
+    And save screenshot
+    Then I see field "Title"
+    And I should see an "input#edit-title-0-value.required" element

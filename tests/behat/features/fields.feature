@@ -166,7 +166,7 @@ Feature: Fields for Landing Page content type
 
     # To be added when corresponding code is added in tide_news and tide_webform
     # And I should see "Embedded Webform" in the "select[name='field_landing_page_component[add_more][add_more_select]']" element
-    # And I should see "Featured news" in the "select[name='field_landing_page_component[add_more][add_more_select]']" element
+    And I should see "Featured news" in the "select[name='field_landing_page_component[add_more][add_more_select]']" element
 
     And I see field "Tags"
     And I should see an "input#edit-field-tags-0-target-id" element

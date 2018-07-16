@@ -6,14 +6,18 @@
  */
 
 use Drupal\field\Entity\FieldConfig;
+use Drupal\workflows\Entity\Workflow;
 
 /**
  * Implements hook_entity_bundle_create().
  */
 function tide_landing_page_entity_bundle_create($entity_type_id, $bundle) {
-  // Support the new content type in the Referred Content field
-  // of the Card automated paragraphs.
+  /** @var \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler */
+  $moduleHandler = \Drupal::service('module_handler');
+
   if ($entity_type_id == 'node') {
+    // Support the new content type in the Referenced Content field
+    // of the Card automated paragraphs.
     $supported_paragraph_types = [
       'card_navigation_featured_auto',
       'card_navigation_auto',
@@ -27,6 +31,29 @@ function tide_landing_page_entity_bundle_create($entity_type_id, $bundle) {
         $field_config->setSetting('handler_settings', $handler_settings);
         $field_config->save();
       }
+    }
+
+    // Enable Editorial workflow for landing page if workflow module is enabled.
+    if ($bundle == 'landing_page') {
+      if ($moduleHandler->moduleExists('workflows')) {
+        $editorial_workflow = Workflow::load('editorial');
+        if ($editorial_workflow) {
+          $editorial_workflow->getTypePlugin()
+            ->addEntityTypeAndBundle('node', 'landing_page');
+          $editorial_workflow->save();
+        }
+      }
+    }
+  }
+
+  // Add the Featured News paragraph to Landing Page component if exists.
+  if ($entity_type_id == 'paragraph' && $bundle == 'featured_news' && $moduleHandler->moduleExists('tide_news')) {
+    $field_config = FieldConfig::loadByName('node', 'landing_page', 'field_landing_page_component');
+    if ($field_config) {
+      $handler_settings = $field_config->getSetting('handler_settings');
+      $handler_settings['target_bundles'][$bundle] = $bundle;
+      $field_config->setSetting('handler_settings', $handler_settings);
+      $field_config->save();
     }
   }
 }

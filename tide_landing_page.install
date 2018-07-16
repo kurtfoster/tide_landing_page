@@ -37,15 +37,19 @@ function tide_landing_page_install() {
 
   /** @var \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler */
   $moduleHandler = \Drupal::service('module_handler');
-  // Add the Featured News paragraph to Landing Page component if exists.
-  if ($moduleHandler->moduleExists('tide_news')) {
-    $field_config = FieldConfig::loadByName('node', 'landing_page', 'field_landing_page_component');
-    if ($field_config) {
-      $handler_settings = $field_config->getSetting('handler_settings');
+  $field_config = FieldConfig::loadByName('node', 'landing_page', 'field_landing_page_component');
+  if ($field_config) {
+    $handler_settings = $field_config->getSetting('handler_settings');
+    // Add the Featured News paragraph to Landing Page component if exists.
+    if ($moduleHandler->moduleExists('tide_news')) {
       $handler_settings['target_bundles']['featured_news'] = 'featured_news';
-      $field_config->setSetting('handler_settings', $handler_settings);
-      $field_config->save();
     }
+    // Add the Embedded Webform paragraph to Landing Page component if exists.
+    if ($moduleHandler->moduleExists('tide_webform')) {
+      $handler_settings['target_bundles']['embedded_webform'] = 'embedded_webform';
+    }
+    $field_config->setSetting('handler_settings', $handler_settings);
+    $field_config->save();
   }
 }
 

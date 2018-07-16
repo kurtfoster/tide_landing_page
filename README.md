@@ -20,10 +20,10 @@ This module defines all the fields, paragraph types and block types used in Land
 
 # RECOMMENDED MODULES
 * [Tide News](https://github.com/dpc-sdp/tide_news)
-* [Tide webform](https://github.com/dpc-sdp/tide_webform)
+* [Tide Webform](https://github.com/dpc-sdp/tide_webform)
 
 # INSTALLATION
-Include the Tide Monsido module in your composer.json file
+Include the Tide Landing Page module in your composer.json file
 ```bash
 composer require dpc-sdp/tide_landing_page
 ```

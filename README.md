@@ -15,7 +15,7 @@ The Tide Landing Page module provides the Landing Page content type and related 
 This module defines all the fields, paragraph types and block types used in Landing Pages.
 
 # REQUIREMENTS
-* [Tide Core Profile](https://github.com/dpc-sdp/tide)
+* [Tide Core](https://github.com/dpc-sdp/tide_core)
 * [Tide Media](https://github.com/dpc-sdp/tide_media)
 
 # RECOMMENDED MODULES

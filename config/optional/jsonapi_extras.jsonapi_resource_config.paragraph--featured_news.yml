@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - paragraphs.paragraphs_type.card_promotion
-id: paragraph--card_promotion
+    - paragraphs.paragraphs_type.featured_news
+id: paragraph--featured_news
 disabled: false
-path: paragraph/card_promotion
-resourceType: paragraph--card_promotion
+path: paragraph/featured_news
+resourceType: paragraph--featured_news
 resourceFields:
   id:
     fieldName: id
@@ -144,59 +144,9 @@ resourceFields:
     disabled: false
     advancedOptionsIcon: ''
     enhancer_label: ''
-  field_paragraph_cta:
-    fieldName: field_paragraph_cta
-    publicName: field_paragraph_cta
-    enhancer:
-      id: link_enhancer
-    disabled: false
-    advancedOptionsIcon: ''
-    enhancer_label: ''
-  field_paragraph_date:
-    fieldName: field_paragraph_date
-    publicName: field_paragraph_date
-    enhancer:
-      id: date_time_from_string
-      settings:
-        dateTimeFormat: 'Y-m-d\TH:i:sP'
-    disabled: false
-    advancedOptionsIcon: ''
-    enhancer_label: ''
-  field_paragraph_link:
-    fieldName: field_paragraph_link
-    publicName: field_paragraph_link
-    enhancer:
-      id: link_enhancer
-    disabled: false
-    advancedOptionsIcon: ''
-    enhancer_label: ''
-  field_paragraph_media:
-    fieldName: field_paragraph_media
-    publicName: field_paragraph_media
-    enhancer:
-      id: ''
-    disabled: false
-    advancedOptionsIcon: ''
-    enhancer_label: ''
-  field_paragraph_summary:
-    fieldName: field_paragraph_summary
-    publicName: field_paragraph_summary
-    enhancer:
-      id: ''
-    disabled: false
-    advancedOptionsIcon: ''
-    enhancer_label: ''
-  field_paragraph_title:
-    fieldName: field_paragraph_title
-    publicName: field_paragraph_title
-    enhancer:
-      id: ''
-    disabled: false
-    advancedOptionsIcon: ''
-    enhancer_label: ''
-  field_paragraph_topic:
-    fieldName: field_paragraph_topic
-    publicName: field_paragraph_topic
+  field_paragraph_news_reference:
+    fieldName: field_paragraph_news_reference
+    publicName: field_paragraph_news_reference
     enhancer:
       id: ''
     disabled: false

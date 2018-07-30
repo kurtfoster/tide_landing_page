@@ -149,7 +149,7 @@ function tide_landing_page_update_8003() {
 function _tide_landing_page_add_fields_search_api() {
 
   $moduleHandler = \Drupal::service('module_handler');
-  if ($moduleHandler->moduleExists('tide_site')) {
+  if ($moduleHandler->moduleExists('tide_search')) {
     $index_storage = \Drupal::entityTypeManager()
       ->getStorage('search_api_index');
     $index = $index_storage->load('node');

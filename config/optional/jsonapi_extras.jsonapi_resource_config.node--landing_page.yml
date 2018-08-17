@@ -205,13 +205,13 @@ resourceFields:
     advancedOptionsIcon: ''
     enhancer_label: ''
   field_landing_page_hero_theme:
-      fieldName: field_landing_page_hero_theme
-      publicName: field_landing_page_hero_theme
-      enhancer:
-        id: ''
-      disabled: false
-      advancedOptionsIcon: ''
-      enhancer_label: ''  
+    fieldName: field_landing_page_hero_theme
+    publicName: field_landing_page_hero_theme
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''  
   field_landing_page_bg_colour:
     fieldName: field_landing_page_bg_colour
     publicName: field_landing_page_bg_colour

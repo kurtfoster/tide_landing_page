@@ -17,8 +17,6 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_show_contact
     - field.field.node.landing_page.field_landing_page_summary
     - field.field.node.landing_page.field_metatags
-    - field.field.node.landing_page.field_node_primary_site
-    - field.field.node.landing_page.field_node_site
     - field.field.node.landing_page.field_related_links
     - field.field.node.landing_page.field_show_content_rating
     - field.field.node.landing_page.field_show_news_search
@@ -374,20 +372,6 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_node_primary_site:
-    type: options_buttons
-    region: content
-    field_name: field_node_primary_site
-    weight: 17
-    settings: {  }
-    third_party_settings: {  }
-  field_node_site:
-    type: options_buttons
-    region: content
-    field_name: field_node_site
-    weight: 16
-    settings: {  }
-    third_party_settings: {  }
   field_related_links:
     type: paragraphs
     weight: 39

@@ -69,9 +69,11 @@ config_devel:
     - core.entity_view_display.paragraph.keydates.default
     - core.entity_view_display.paragraph.key_journeys.default
     - core.entity_form_display.paragraph.contact_us.default
+    - core.entity_form_display.paragraph.news_listing.default
     - core.entity_form_display.paragraph.phone.default
     - core.entity_form_display.paragraph.social_link.default
     - core.entity_view_display.paragraph.contact_us.default
+    - core.entity_view_display.paragraph.news_listing.default.yml
     - core.entity_view_display.paragraph.phone.default
     - core.entity_view_display.paragraph.social_link.default
     - field.field.block_content.campaign.body
@@ -216,6 +218,7 @@ config_devel:
     - paragraphs.paragraphs_type.key_journeys
     - paragraphs.paragraphs_type.keydates
     - paragraphs.paragraphs_type.contact_us
+    - paragraphs.paragraphs_type.news_listing
     - paragraphs.paragraphs_type.phone
     - paragraphs.paragraphs_type.social_link
     - field.field.node.landing_page.scheduled_archiving

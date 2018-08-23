@@ -7,8 +7,6 @@ dependencies:
     - paragraphs.paragraphs_type.card_navigation_auto
   module:
     - content_moderation
-_core:
-  default_config_hash: Qh1u6XXVNlQN0FK0jGNBirc66-j5G8fH7O2FmMFmQ_8
 id: paragraph.card_navigation_auto.default
 targetEntityType: paragraph
 bundle: card_navigation_auto

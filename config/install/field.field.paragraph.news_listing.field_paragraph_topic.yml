@@ -10,7 +10,7 @@ id: paragraph.news_listing.field_paragraph_topic
 field_name: field_paragraph_topic
 entity_type: paragraph
 bundle: news_listing
-label: Topic
+label: 'Topic / Tag'
 description: 'To display a filtered listing of 6 latest news items, type in the topics and tags you want to filter by. If you don''t enter any topics or tags, all latest news will be displayed.'
 required: false
 translatable: true

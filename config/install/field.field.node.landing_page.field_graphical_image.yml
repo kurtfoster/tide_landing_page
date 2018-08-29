@@ -10,7 +10,7 @@ field_name: field_graphical_image
 entity_type: node
 bundle: landing_page
 label: 'Graphical Image'
-description: ''
+description: 'The graphical image will not be displayed when a hero image is added.'
 required: false
 translatable: true
 default_value: {  }

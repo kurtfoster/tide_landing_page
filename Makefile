@@ -106,8 +106,8 @@ install-module:
 	# Enable current module.
 	$(call exec,docker-compose exec cli drush -r $(APP)/$(WEBROOT) en -y $(MODULE_NAME))
 	$(call title,Module Enabled)
-        # Clear Caches.
-        $(call exec,docker-compose exec cli drush cr)
+	# Clear Caches.
+	$(call exec,docker-compose exec cli drush cr)
 	$(call title,Caches Cleared)
 
 ## Install site.

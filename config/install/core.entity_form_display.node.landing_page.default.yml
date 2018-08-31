@@ -409,20 +409,6 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_node_primary_site:
-    type: options_buttons
-    region: content
-    field_name: field_node_primary_site
-    weight: 18
-    settings: {  }
-    third_party_settings: {  }
-  field_node_site:
-    type: options_buttons
-    region: content
-    field_name: field_node_site
-    weight: 17
-    settings: {  }
-    third_party_settings: {  }
   field_related_links:
     type: paragraphs
     weight: 39

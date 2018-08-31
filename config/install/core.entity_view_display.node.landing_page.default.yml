@@ -1,3 +1,4 @@
+uuid: dc49400f-c9bb-4efa-b772-c5d9a636edb1
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,7 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_component
     - field.field.node.landing_page.field_landing_page_contact
     - field.field.node.landing_page.field_landing_page_hero_image
+    - field.field.node.landing_page.field_landing_page_hero_logo
     - field.field.node.landing_page.field_landing_page_hero_theme
     - field.field.node.landing_page.field_landing_page_intro_text
     - field.field.node.landing_page.field_landing_page_key_journeys
@@ -17,7 +19,10 @@ dependencies:
     - field.field.node.landing_page.field_landing_page_show_contact
     - field.field.node.landing_page.field_landing_page_summary
     - field.field.node.landing_page.field_metatags
+    - field.field.node.landing_page.field_node_primary_site
+    - field.field.node.landing_page.field_node_site
     - field.field.node.landing_page.field_related_links
+    - field.field.node.landing_page.field_show_content_rating
     - field.field.node.landing_page.field_show_news_search
     - field.field.node.landing_page.field_show_related_content
     - field.field.node.landing_page.field_show_site_section_nav
@@ -57,7 +62,7 @@ content:
     type: entity_reference_label
     region: content
   field_graphical_image:
-    weight: 20
+    weight: 21
     label: above
     settings:
       link: true
@@ -65,7 +70,7 @@ content:
     type: entity_reference_label
     region: content
   field_landing_page_bg_colour:
-    weight: 18
+    weight: 19
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -100,7 +105,7 @@ content:
     region: content
   field_landing_page_contact:
     type: entity_reference_revisions_entity_view
-    weight: 13
+    weight: 14
     label: above
     settings:
       view_mode: default
@@ -115,8 +120,16 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-  field_landing_page_hero_theme:
+  field_landing_page_hero_logo:
+    type: entity_reference_label
     weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_landing_page_hero_theme:
+    weight: 12
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -139,7 +152,7 @@ content:
     third_party_settings: {  }
     region: content
   field_landing_page_nav_title:
-    weight: 17
+    weight: 18
     label: above
     settings:
       link_to_entity: false
@@ -147,7 +160,7 @@ content:
     type: string
     region: content
   field_landing_page_show_contact:
-    weight: 12
+    weight: 13
     label: above
     settings:
       format: default
@@ -157,7 +170,7 @@ content:
     type: boolean
     region: content
   field_metatags:
-    weight: 14
+    weight: 15
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -173,7 +186,7 @@ content:
     third_party_settings: {  }
     region: content
   field_show_news_search:
-    weight: 19
+    weight: 20
     label: above
     settings:
       format: default
@@ -183,7 +196,7 @@ content:
     type: boolean
     region: content
   field_show_site_section_nav:
-    weight: 15
+    weight: 16
     label: above
     settings:
       format: default
@@ -193,7 +206,7 @@ content:
     type: boolean
     region: content
   field_show_topic_term_and_tags:
-    weight: 16
+    weight: 17
     label: above
     settings:
       format: default
@@ -220,6 +233,8 @@ content:
     region: content
 hidden:
   field_landing_page_summary: true
+  field_node_primary_site: true
+  field_node_site: true
   field_show_content_rating: true
   field_show_related_content: true
   field_show_social_sharing: true

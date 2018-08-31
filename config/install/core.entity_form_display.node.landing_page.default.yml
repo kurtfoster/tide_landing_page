@@ -419,6 +419,14 @@ content:
       default_paragraph_type: _none
     third_party_settings: {  }
     region: content
+  field_show_content_rating:
+    type: boolean_checkbox
+    region: content
+    field_name: field_show_content_rating
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_show_news_search:
     weight: 3
     settings:

@@ -5,6 +5,7 @@ package: Tide
 core: 8.x
 dependencies:
   - drupal:datetime
+  - drupal:datetime_range
   - drupal:field
   - drupal:link
   - drupal:menu_ui
@@ -128,6 +129,7 @@ config_devel:
     - field.field.paragraph.call_to_action.field_paragraph_title
     - field.field.paragraph.card_event.field_paragraph_cta
     - field.field.paragraph.card_event.field_paragraph_date
+    - field.field.paragraph.card_event.field_paragraph_date_range
     - field.field.paragraph.card_event.field_paragraph_location
     - field.field.paragraph.card_event.field_paragraph_media
     - field.field.paragraph.card_event.field_paragraph_topic
